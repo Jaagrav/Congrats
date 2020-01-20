@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Congrats Jaagrav!</title>
+        <style>
+           @import url('https://fonts.googleapis.com/css?family=Comfortaa|Nunito&display=swap');
+body{
+    background:#000;
+}
+.preloader{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    margin:auto;
+    top:0;left:0;right:0;bottom:0;
+    background:#fff;
+    z-index:6;
+    transition:1.5s;
+}
+.confetti{
+    z-index:5;
+}
+.BG,.confetti{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    margin:auto;
+    top:0;left:0;right:0;bottom:0;
+    filter:blur(25px);
+}
+.confetti{
+    filter:blur(0);
+}
+.container{
+    position:absolute;
+    height: 75%;
+    width:90%;
+    margin:auto;
+    top:0;left:0;right:0;bottom:0;
+    border-radius:15px;
+}
+.congrats, h3,h2,img{
+    position:relative;
+    color:white;
+    font-family: 'Nunito', sans-serif;
+}
+.trophy{
+    position:relative  ;
+    height:150px;
+    z-index:6;
+    margin:auto;
+    transition:1s;
+    transform:translateY(100px) scale(1.5);
+}
+strong{
+    color:#009384;position:relative ;z-index:1;
+}
+.congrats{font-family: 'Comfortaa', cursive;}
+        </style>
+    </head>
+    <body>
+    <div class="preloader"></div>
+        <img src="https://source.unsplash.com/900x1500/?sky blue" class="BG">
+        <img class="confetti" src="https://media.giphy.com/media/2dg3C8YqaEUkay0IbL/giphy.gif"/>
+        <div class="container">
+            <center><h1 class="congrats">Congrats!</h1>
+            <img src="https://cdn0.iconfinder.com/data/icons/sport-achievment-badges/128/sport_badges-05-512.png" class="trophy"><br>
+            <h2>Jaagrav</h2>
+            <h3>On contributing to Open Source Software completing <strong class="tasksCount">17 tasks</strong> as part of <strong>Google Code-In 2019</strong></h3>
+            <h3>December 2 - January 23</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/OpenMRS_logo_2008.svg/1280px-OpenMRS_logo_2008.svg.png" style="height:30px;"/>
+            </center>
+        </div>
+        <script>
+            window.onload=function(){
+    document.querySelector(".preloader").style.filter = "opacity(0)";
+    document.querySelector(".trophy").style.transform = "translateY(0) scale(1)";
+}
+        </script>
+    </body>
+</html>
